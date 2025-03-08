@@ -4,6 +4,7 @@ description: Learn how to work with forms in SvelteKit using form actions, progr
 slug: working-with-forms-in-sveltekit
 published: '2023-1-20'
 category: sveltekit
+draft: true
 ---
 
 {% youtube id="XNbCp7ZJi-8" title="Working With Forms In SvelteKit" %}
