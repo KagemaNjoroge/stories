@@ -10,24 +10,17 @@ export const twitterHandle = '@reecejames934'
 export const twitter = 'https://x.com/reecejames934'
 export const youtube = 'https://www.youtube.com/'
 export const github = 'https://github.com/kagemanjoroge'
-export const uses = 'https://github.com/kagemanjoroge/uses'
+export const facebook = 'https://facebook.com/kagemanjoroge001'
 
 export const categories = {
-	javascript: 'JavaScript',
-	react: 'React',
-	css: 'CSS',
-	general: 'General',
-	design: 'Design',
-	git: 'Git & GitHub',
-	next: 'Next.js',
-	typescript: 'TypeScript',
-	svelte: 'Svelte',
-	sveltekit: 'SvelteKit',
+	bookReviews: 'Book Reviews',
+	poems: 'Poems',
 	uncleGithendu: 'Uncle Githendu',
+	ebooks: 'Ebooks',
 }
 
 // https://github.com/user/repo/blob/main/posts
-export const fileUrl = `https://github.com/kagemanjoroge/joy-of-code/blob/main/posts`
+export const fileUrl = `https://github.com/kagemanjoroge/stories/blob/main/posts`
 
 // https://raw.githubusercontent.com/user/repo/main/posts/post-slug/images/image.webp
-export const imagesUrl = `https://raw.githubusercontent.com/kagemanjoroge/joy-of-code/main/posts`
+export const imagesUrl = `https://github.com/KagemaNjoroge/stories/main/posts`
