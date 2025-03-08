@@ -37,7 +37,7 @@ The project uses 📦️ [pnpm](https://pnpm.io/) but any package manager should
 ### 👬 Clone the project
 
 ```sh
-git clone https://github.com/mattcroat/joy-of-code.git
+git clone https://github.com/kagemanjoroge/stories.git
 ```
 
 ### ⚙️ Rename `.env.example` to `.env`
