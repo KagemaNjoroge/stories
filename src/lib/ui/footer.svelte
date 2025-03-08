@@ -1,75 +1,88 @@
 <script lang="ts">
-	import { GitHub, Mail, RSS, X } from '$lib/icons'
+	import { Facebook, GitHub, Mail, RSS } from '$lib/icons'
 	import * as config from '$lib/site/config'
 </script>
 
-<footer>
-	<div class="categories">
-		<p>Categories</p>
-		<ul>
-			{#each Object.entries(config.categories) as [slug, category]}
+<div class="footer">
+	<footer>
+		<div class="categories">
+			<p>Categories</p>
+			<ul>
+				{#each Object.entries(config.categories) as [slug, category]}
+					<li>
+						<a href="/categories/{slug}">{category}</a>
+					</li>
+				{/each}
+			</ul>
+		</div>
+
+		<div class="follow">
+			<p>Follow</p>
+			<ul>
 				<li>
-					<a href="/categories/{slug}">{category}</a>
+					<a href="/newsletter">
+						<Mail width={20} height={20} aria-hidden={true} />
+						<span>Newsletter</span>
+					</a>
 				</li>
-			{/each}
-		</ul>
-	</div>
+				<li>
+					<a href="/rss.xml" target="_blank">
+						<RSS width={20} height={20} aria-hidden={true} />
+						<span>RSS</span>
+					</a>
+				</li>
 
-	<div class="follow">
-		<p>Follow</p>
-		<ul>
-			<li>
-				<a href="/newsletter">
-					<Mail width={20} height={20} aria-hidden={true} />
-					<span>Newsletter</span>
-				</a>
-			</li>
-			<li>
-				<a href="/rss.xml" target="_blank">
-					<RSS width={20} height={20} aria-hidden={true} />
-					<span>RSS</span>
-				</a>
-			</li>
+				<li>
+					<a href={config.facebook} target="_blank" rel="noreferrer">
+						<Facebook width={20} height={20} aria-hidden={true} />
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href={config.github} target="_blank" rel="noreferrer">
+						<GitHub width={20} height={20} aria-hidden={true} />
+						<span>GitHub</span>
+					</a>
+				</li>
+			</ul>
+		</div>
 
-			<li>
-				<a href={config.twitter} target="_blank" rel="noreferrer">
-					<X width={20} height={20} aria-hidden={true} />
-					<span>Twitter</span>
-				</a>
-			</li>
-			<li>
-				<a href={config.github} target="_blank" rel="noreferrer">
-					<GitHub width={20} height={20} aria-hidden={true} />
-					<span>GitHub</span>
-				</a>
-			</li>
-		</ul>
-	</div>
+		<div class="other">
+			<p>Other</p>
+			<ul>
+				<li><a href="/about">Shop</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</div>
+	</footer>
 
-	<div class="other">
-		<p>Other</p>
-		<ul>
-			<li><a href="/about">About</a></li>
-			<li>
-				<a href={config.uses} target="_blank" rel="noreferrer">Uses</a>
-			</li>
-		</ul>
+	<div class="name">
+		Brought to you by the good folks at <a
+			href="https://tomorrow.co.ke"
+			referrerpolicy="no-referrer">TomorrowAI</a
+		>
 	</div>
-</footer>
+</div>
 
 <style>
-	footer {
-		--gap: var(--spacing-64);
-
-		display: flex;
-		flex-direction: column;
-		gap: var(--gap);
-		margin-block-start: var(--spacing-64);
-		padding: var(--spacing-32);
+	.footer {
 		background-color: var(--clr-footer-bg);
 		border-top: 1px solid var(--clr-menu-border);
 		border-left: 1px solid var(--clr-menu-border);
 		border-radius: var(--rounded-20) var(--rounded-20) 0px 0px;
+		padding: var(--spacing-32);
+	}
+	.name {
+		text-align: end;
+	}
+	footer {
+		display: flex;
+
+		gap: var(--gap);
+		/* margin-block-start: var(--spacing-64); */
+
+		flex-direction: column;
+		--gap: var(--spacing-64);
 
 		@media (width >= 600px) {
 			--gap: var(--spacing-128);
