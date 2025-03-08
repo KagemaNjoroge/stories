@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /drafts/
+Sitemap: https://kagema.tomorrow.co.ke/sitemap.xml
