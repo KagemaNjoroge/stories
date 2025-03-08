@@ -4,6 +4,7 @@ description: Learn how to create a Markdown blog using Next.js.
 slug: create-a-markdown-blog
 published: '2021-10-25'
 category: next
+draft: true
 ---
 
 {% embed src="https://thedigitalgarden.vercel.app" title="JavaScript Sandbox" %}
