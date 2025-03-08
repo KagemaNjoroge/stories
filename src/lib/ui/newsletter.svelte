@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition'
 	import { Envelope } from '$lib/icons'
+	import { fade } from 'svelte/transition'
 
 	let email = $state('')
 	let error = $state('')
@@ -35,7 +35,7 @@
 		type="email"
 		id="email"
 		name="email"
-		placeholder="giga@chad.com"
+		placeholder="user@gmail.com"
 		autocomplete="on"
 	/>
 	<button type="submit">
