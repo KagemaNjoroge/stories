@@ -17,6 +17,7 @@ export type Frontmatter = {
 	slug: string
 	published: string
 	category: string
+	image: string
 }
 
 export type Fetch = (
