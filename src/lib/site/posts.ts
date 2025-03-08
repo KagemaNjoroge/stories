@@ -1,7 +1,7 @@
+import type { Post } from '$lib/types'
+import matter from 'gray-matter'
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import matter from 'gray-matter'
-import type { Post } from '$lib/types'
 
 async function parseMarkdownFiles() {
 	try {
@@ -28,9 +28,11 @@ function getTime(date: string) {
 
 export async function getPosts() {
 	let posts = await parseMarkdownFiles()
+
 	posts = posts.sort((first, second) => {
 		return getTime(second.published) - getTime(first.published)
 	})
+
 	return posts
 }
 
