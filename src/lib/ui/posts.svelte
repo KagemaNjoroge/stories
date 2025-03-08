@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition'
-	import type { Snippet } from 'svelte'
+	import { imagesUrl } from '$lib/site/config'
 	import type { Post } from '$lib/types'
+	import type { Snippet } from 'svelte'
+	import { fade } from 'svelte/transition'
 
 	type Props = {
 		posts: Post[]
@@ -12,6 +13,7 @@
 	let { posts, title, more }: Props = $props()
 </script>
 
+<!-- ${images}/${slug}/images/${src} -->
 <section>
 	{@render title?.()}
 
@@ -27,7 +29,12 @@
 					<article class="card">
 						<div class="details">
 							<span class="title">{post.title}</span>
-							image
+							{#if post.image}
+								<img
+									src={imagesUrl + '/' + post.slug + '/' + post.image}
+									alt={post.title}
+								/>
+							{/if}
 							<p class="description">{post.description}</p>
 						</div>
 					</article>
