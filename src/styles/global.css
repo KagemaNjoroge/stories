@@ -51,6 +51,7 @@ html {
 html,
 body {
 	height: 100%;
+	width: 100%;
 }
 
 body {
@@ -66,8 +67,8 @@ body {
 		position: fixed;
 		background-image: linear-gradient(
 			to bottom,
-			hsl(225 74% 40%),
-			hsl(270 70% 40%)
+			hsl(205 44% 60%),
+			hsl(130 70% 40%)
 		);
 		opacity: 0.1;
 		z-index: -1;
