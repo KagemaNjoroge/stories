@@ -4,6 +4,7 @@ description: Create a JavaScript code sandbox using Vite and TypeScript.
 slug: create-a-coding-sandbox
 published: '2021-9-15'
 category: typescript
+draft: true
 ---
 
 {% embed src="https://javascriptsandbox.netlify.app" title="JavaScript Sandbox" %}
