@@ -74,6 +74,7 @@
 	}
 	.name {
 		text-align: end;
+		font-size: x-small;
 	}
 	footer {
 		display: flex;
