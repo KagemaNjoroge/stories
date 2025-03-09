@@ -5,7 +5,6 @@ import Cog from './cog.svelte'
 import Envelope from './envelope.svelte'
 import Eye from './eye.svelte'
 
-import Facebook from './facebook.svelte'
 import GitHub from './github.svelte'
 import Heart from './heart.svelte'
 import Mail from './mail.svelte'
@@ -21,7 +20,6 @@ export {
 	Cog,
 	Envelope,
 	Eye,
-	Facebook,
 	GitHub,
 	Heart,
 	Mail,

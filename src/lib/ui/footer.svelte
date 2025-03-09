@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Facebook, GitHub, Mail, RSS } from '$lib/icons'
+	import {  GitHub, Mail, RSS } from '$lib/icons'
 	import * as config from '$lib/site/config'
 </script>
 
@@ -32,12 +32,7 @@
 					</a>
 				</li>
 
-				<li>
-					<a href={config.facebook} target="_blank" rel="noreferrer">
-						<Facebook width={20} height={20} aria-hidden={true} />
-						<span>Facebook</span>
-					</a>
-				</li>
+				<!-- Facebook -->
 				<li>
 					<a href={config.github} target="_blank" rel="noreferrer">
 						<GitHub width={20} height={20} aria-hidden={true} />
