@@ -1,6 +1,6 @@
 ---
 title: Wathweri's Five Star Hotel
-description: SvelteKit is the swiss army knife of JavaScript frameworks and blurs the line between frontend and backend.
+description: Uncle Githendu's encounter with a Nyeri lady at the legendary Wathweri's Five Star Hotel.
 slug: wathweris-five-star-hotel
 published: '2025-03-08'
 category: uncleGithendu
