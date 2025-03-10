@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { imagesUrl } from '$lib/site/config'
+	let imagesUrl =
+		'https://github.com/KagemaNjoroge/stories/raw/110cf8b8bfea0efd6204484ef46f87a2b95d505d/posts'
 	import type { Post } from '$lib/types'
 	import type { Snippet } from 'svelte'
 	import { fade } from 'svelte/transition'
@@ -30,8 +31,11 @@
 						<div class="details">
 							<span class="title">{post.title}</span>
 							{#if post.image}
+								{console.log(imagesUrl + '/' + post.slug + '/' + post.image)}
+
 								<img
 									src={imagesUrl + '/' + post.slug + '/' + post.image}
+									class="image"
 									alt={post.title}
 								/>
 							{/if}
@@ -49,6 +53,7 @@
 <style>
 	section {
 		margin-top: var(--spacing-64);
+		margin-bottom: var(--spacing-64);
 	}
 
 	.cards {
