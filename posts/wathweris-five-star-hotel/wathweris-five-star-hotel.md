@@ -8,6 +8,8 @@ category: uncleGithendu
 
 ## Table of Contents
 
+![Club Lollipop](images/lollipop.png)
+
 Deep in our village stands the legendary Wathweri’s Five Star Hotel. If someone in the village tells you, “Ngora ho,” just know they are referring to this fine establishment. Founded on September 3rd, 1989, this hotel has survived decades by selling only chai (tea) and karara (a slice of mandazi). Nothing more, nothing less.
 
 They once tried introducing ugali mafuriko (ugali and bone soup), but the villagers rejected it with finality. So, Wathweri’s went back to its usual script: chai and karara.
