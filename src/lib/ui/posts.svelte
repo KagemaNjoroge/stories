@@ -31,8 +31,6 @@
 						<div class="details">
 							<span class="title">{post.title}</span>
 							{#if post.image}
-								{console.log(imagesUrl + '/' + post.slug + '/' + post.image)}
-
 								<img
 									src={imagesUrl + '/' + post.slug + '/' + post.image}
 									class="image"
