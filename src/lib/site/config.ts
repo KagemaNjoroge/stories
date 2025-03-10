@@ -23,4 +23,4 @@ export const categories = {
 export const fileUrl = `https://github.com/kagemanjoroge/stories/blob/main/posts`
 
 // https://raw.githubusercontent.com/user/repo/main/posts/post-slug/images/image.webp
-export const imagesUrl = `https://github.com/KagemaNjoroge/stories/blob/main/posts`
+export const imagesUrl = `https://raw.githubusercontent.com/KagemaNjoroge/stories/blob/main/posts`
