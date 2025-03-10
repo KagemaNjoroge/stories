@@ -6,9 +6,7 @@ published: '2025-03-08'
 category: uncleGithendu
 ---
 
-## Table of Contents
-
-![Club Lollipop](images/lollipop.png)
+{% img src="lollipop.png" alt="Club Lollipop" %}
 
 Deep in our village stands the legendary Wathweri’s Five Star Hotel. If someone in the village tells you, “Ngora ho,” just know they are referring to this fine establishment. Founded on September 3rd, 1989, this hotel has survived decades by selling only chai (tea) and karara (a slice of mandazi). Nothing more, nothing less.
 
@@ -21,8 +19,6 @@ But what really makes Wathweri’s famous is not the tea, nor the mandazi—it i
 (Come eat and drink, your grandkids will settle the bill.)
 
 A dangerous motto. One that Uncle Githendu took literally.
-
-## Tools of the trade
 
 On a calm Sunday afternoon, Uncle Githendu walked into Wathweri’s, hands deep in his pockets, checking for something that was not there—money.
 
