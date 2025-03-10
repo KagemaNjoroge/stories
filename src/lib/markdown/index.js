@@ -13,7 +13,8 @@ import remarkTableofContents from 'remark-toc'
 import { unified } from 'unified'
 import { rehypeCopyCode } from './plugins.js'
 
-const images = `https://github.com/KagemaNjoroge/stories/main/posts`
+const images =
+	'https://github.com/KagemaNjoroge/stories/raw/110cf8b8bfea0efd6204484ef46f87a2b95d505d/posts'
 
 const markdownProcessor = unified()
 	.use(toMarkdownAST)
